@@ -14,3 +14,12 @@ def sol_2(arr, divisor):
         answer = [-1]
     answer.sort()
     print (answer )
+
+def sol_3(n):
+    answer = 0
+    num = pow(n, 0.5) 
+    if num == int(num) :
+        answer = pow(num + 1, 2)
+    else :
+        answer = -1
+    return answer  
