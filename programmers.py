@@ -31,3 +31,14 @@ def sol_4(n):
     if n%i ==0:
       answer += i
   return answer
+
+#제일 작은 수 제거하기
+def sol_5(arr):
+    answer = []
+    
+    if (len(arr) <= 1) :
+        answer = [-1]
+    else :
+        arr.remove(min(arr))
+        answer = arr
+    return answer
