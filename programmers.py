@@ -34,11 +34,30 @@ def sol_4(n):
 
 #제일 작은 수 제거하기
 def sol_5(arr):
-    answer = []
-    
-    if (len(arr) <= 1) :
+    answer = [
+    if (len(arr) <= 1):
         answer = [-1]
     else :
         arr.remove(min(arr))
         answer = arr
     return answer
+
+#두 정수 사이의 합
+def sol_6(a, b):
+    answer = 0
+    if a>b:
+        for i in range(b, a+1):
+            answer += i
+    elif b>a:
+        for i in range(a, b+1):
+            answer += i
+    else :
+        answer = a
+    return answer    
+
+#자연수 뒤집어 배열로 만들기
+def sol_7(n):
+    answer = list(map(int,reversed(str(n))))
+    return answer
+
+    
