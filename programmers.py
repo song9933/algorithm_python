@@ -60,4 +60,14 @@ def sol_7(n):
     answer = list(map(int,reversed(str(n))))
     return answer
 
-    
+#최대공약수, 최소공배수
+def sol_8(n,m):
+    for i in range(1, n+1):
+        if n%i == 0 :
+            if m%i ==0:
+                gcd = i
+    if gcd == 1:
+        lcm = n*m
+    else :
+        lcm = gcd*(n//gcd)*(m//gcd)
+    return [gcd, lcm]
