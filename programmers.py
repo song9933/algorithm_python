@@ -71,3 +71,11 @@ def sol_8(n,m):
     else :
         lcm = gcd*(n//gcd)*(m//gcd)
     return [gcd, lcm]
+
+#소수찾기 
+def sol_9(n):
+    a_set = set(range(2, n+1))
+    for i in range(2, n+1) :
+        if i in a_set:
+            a_set -= set(range(i*2, n+1, i))
+    return len(a_set)
