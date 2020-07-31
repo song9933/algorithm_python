@@ -79,3 +79,10 @@ def sol_9(n):
         if i in a_set:
             a_set -= set(range(i*2, n+1, i))
     return len(a_set)
+
+#자릿수 더하기
+def sol_10(n):
+    answer = 0
+    num = list(map(int, str(n)))
+    
+    return sum(num)    
