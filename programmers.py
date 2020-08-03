@@ -84,5 +84,22 @@ def sol_9(n):
 def sol_10(n):
     answer = 0
     num = list(map(int, str(n)))
-    
     return sum(num)    
+
+#x만큼 간격이 있는 n개의 숫자
+def sol_11(x, n):
+    answer = []
+    for i in range(1, n+1) :
+        answer.append(x*i)
+    return answer
+
+#이상한 문자 만들기    
+def sol_12(s):
+    a_list = s.split(" ")
+    answer = []
+    for a in a_list :
+        s =""
+        for i in range(0, len(a)):
+            s += a[i].upper() if i%2 == 0 else a[i].lower()
+        answer.append(s)
+    return ' '.join(answer)
