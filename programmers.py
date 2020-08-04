@@ -103,3 +103,13 @@ def sol_12(s):
             s += a[i].upper() if i%2 == 0 else a[i].lower()
         answer.append(s)
     return ' '.join(answer)
+
+#스킬체크테스트 level_1
+def solution_12(s):
+    count_p = s.count('p')+s.count('P')
+    count_y = s.count('y')+s.count('Y')
+    answer = (count_p == count_y)
+    return answer
+    
+def solution(s):
+   return s.isdigit() and len(s) in (4,6)
