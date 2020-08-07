@@ -111,5 +111,14 @@ def solution_12(s):
     answer = (count_p == count_y)
     return answer
     
-def solution(s):
+def solution_13(s):
    return s.isdigit() and len(s) in (4,6)
+
+#문자열다루기 기본
+def solution_14(s):
+    answer = True
+    if (len(s) ==4 or len(s) == 6) and s.isdigit() :
+        answer = True
+    else :
+        answer = False
+    return answer
