@@ -122,3 +122,14 @@ def solution_14(s):
     else :
         answer = False
     return answer
+
+#핸드폰번호 가리기
+def solution_15(phone_number):
+    p = phone_number[len(phone_number)-4:len(phone_number)]
+    s = "*"*(len(phone_number)-4)
+    answer = s+p
+    return answer    
+
+#평균구하기
+def solution_16(arr):
+    return sum(arr)/len(arr)    
